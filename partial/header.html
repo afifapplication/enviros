@@ -1,0 +1,140 @@
+<style>
+    .navbar {
+        background: var(--secondary-color);
+        color: var(--text-light);
+        padding: 15px 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    .navbar-title {
+        flex: 1 1 auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-toggle {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--text-light);
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        flex: 0 1 auto;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .navbar-menu li a {
+        color: var(--text-light);
+        text-decoration: none;
+        position: relative;
+        padding: 8px 0;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-menu li a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background: var(--text-light);
+        transition: width 0.3s;
+    }
+
+    .navbar-menu li a:hover::after {
+        width: 100%;
+    }
+    .navbar-menu li a.active {
+        background-color: var(--tertiary-color);
+        border-radius: 4px;
+        padding: 8px 12px;
+        color: var(--text-dark);
+    }
+
+
+    @media (max-width: 768px) {
+        .navbar-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar-title,
+        .navbar-toggle {
+            align-self: stretch;
+            text-align: left;
+        }
+
+        .navbar-title{
+            padding-top: 3px;
+        }
+
+        .navbar-toggle {
+            display: block;
+            float: right;
+            text-align: right;
+        }
+
+        .navbar-menu {
+            flex-direction: column;
+            align-items: flex-start;
+            display: none;
+        }
+
+        .navbar-menu.show {
+            display: flex;
+        }
+
+        .navbar-menu li {
+            width: 100%;
+            padding: 0 0;
+        }
+
+        .navbar-menu li a {
+            display: block;
+            width: 100%;
+        }
+        .navbar-header {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             width: 100%;
+         }
+    }
+</style>
+
+<nav class="navbar"><div class="navbar-container">
+    <div class="navbar-header">
+        <div class="navbar-title"><img src="assets/img/index/website-logo-only.png" alt="Logo" height="50px">&nbsp;&nbsp;ENVIROS</div>
+        <button class="navbar-toggle" id="navbarToggle">&#9776;</button>
+    </div>
+    <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+</nav>
