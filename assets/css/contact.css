@@ -1,0 +1,16 @@
+#second-section {
+    color: var(--text-light);
+    padding: 60px 0 90px 0;
+    background-color: var(--accent-cream);
+    .container{
+    padding: 0;
+        .section-title{
+            color: var(--secondary-color);
+        }
+
+        div div form div label{
+            color: var(--text-dark);
+            text-align: left !important;
+        }
+    }
+}

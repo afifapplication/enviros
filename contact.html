@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Two Section Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/contact.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="header"></div>
+
+<!-- Section 2: Purple background with title and 3 columns -->
+<section id="second-section">
+    <div class="container text-center">
+        <div class="section-title mb-5">Feel Free to Reach Us</div>
+
+        <div class="row align-items-start gy-4">
+
+            <!-- Left Column: Logo & Text -->
+            <div class="col-md-6 text-start">
+                <!-- Logo centered -->
+                <div class="mb-4 text-center">
+                    <img src="assets/img/index/website-logo.png" alt="Visual" class="img-fluid" width="200">
+                </div>
+                <!-- Intro Text -->
+                <h4 class="text-dark mb-3">We’re here to help you create a safer, healthier, and fully compliant workplace.</h4>
+                <p class="text-muted">
+                    Whether you need expert consultation, on-site assessments, or tailored training programs, our team is ready to support your goals.
+                </p>
+                <p class="text-muted">
+                    Every organization is unique—and we’re committed to providing responsive, customized solutions that align with your industry requirements and safety priorities.
+                </p>
+                <p class="text-muted">
+                    Reach out to us with your inquiries, service needs, or to schedule a consultation. Our specialists are available to guide you through the next steps and ensure you get the clarity and confidence you need to move forward. Let’s work together to build a culture of safety and compliance you can count on.
+                </p>
+            </div>
+
+            <!-- Right Column: Contact Form inside a Card -->
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3 text-start">
+                                <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <div class="text-start">
+                                <button type="submit" class="btn btn-primary" style="background-color: #e86e1c; border-color: #e86e1c;">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

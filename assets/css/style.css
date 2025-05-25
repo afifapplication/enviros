@@ -1,16 +1,19 @@
 :root {
     --primary-color: #28b760;     /* Muted green with a hint of grey */
-    --secondary-color: #1e914c;   /* Darker desaturated green */
+    --secondary-color: #166f3b;    /* Darker desaturated green #1e914c;*/
     --tertiary-color: #a6d9bd;    /* Soft pastel green for accents */
     --text-light: #ffffff;
     --text-dark: #1a1a1a;
+
+    --accent-orange: #e86e1c; /*button*/
+    --accent-blue: #6c7a89; /*section dark background*/
+    --accent-cream: #f5f5f5; /*light background or line*/
 
     --text-large:48px;
     --text-medium:36px;
     --text-small:24px;
     --text-small-xs:17px;
 
-    --background-color-light: #f5f5f5;
 }
 
 
@@ -18,6 +21,9 @@ body {
     font-family: 'Roboto', sans-serif;
 
     section{
+        padding: 90px 0;
+    }
+    section .container{
         padding: 90px 0;
     }
 
@@ -92,8 +98,9 @@ body {
 
 
 #headline-section {
+    padding: 120px 0;
     position: relative;
-    background-image: url('../../assets/img/index/headline-section-bg.gif');
+    background-image: url('../../assets/img/index/headline2-section-bg.png');
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -117,15 +124,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Adjust the opacity here */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity here */
     z-index: -1;
 }
 
 
 #second-section {
+    padding: 0;
     color: var(--text-light);
-    padding: 60px 0;
-    background-color: var(--background-color-light);
+    background-color: var(--accent-cream);
     .container{
 
         .section-title{
@@ -157,7 +164,6 @@ body {
 #third-section {
     padding-bottom: 0;
     .container{
-        padding: 90px 0;
         border-radius: 20px;
         background-color:var(--primary-color);
 
@@ -172,6 +178,7 @@ body {
 }
 
 #fourth-section {
+    padding: 0;
     .container{
         border-radius: 20px;
 
@@ -183,7 +190,6 @@ body {
 
 #fifth-section {
     .container{
-        padding: 90px 0;
         border-radius: 20px;
         background-color:var(--primary-color);
 

@@ -34,6 +34,21 @@ fetch('partial/header.html')
                 href === 'index.html'
             ) {
                 link.classList.add('active');
+            } else if (
+                (currentPath === '/' || currentPath.endsWith('service.html')) &&
+                href === 'service.html'
+            ) {
+                link.classList.add('active');
+            } else if (
+                (currentPath === '/' || currentPath.endsWith('about.html')) &&
+                href === 'about.html'
+            ) {
+                link.classList.add('active');
+            } else if (
+                (currentPath === '/' || currentPath.endsWith('contact.html')) &&
+                href === 'contact.html'
+            ) {
+                link.classList.add('active');
             } else {
                 link.classList.remove('active');
             }
