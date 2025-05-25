@@ -3,7 +3,7 @@
     padding: 60px 0 90px 0;
     background-color: var(--accent-cream);
     .container{
-    padding: 0;
+    padding: 0 10px;
         .section-title{
             color: var(--secondary-color);
         }
