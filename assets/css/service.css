@@ -29,10 +29,8 @@
 }
 
 
-#second-section {
+.content-section {
     color: var(--text-light);
-    padding: 60px 0 90px 0;
-    background-color: var(--accent-cream);
     .container{
 
         .section-title{
@@ -77,6 +75,47 @@
         .service-description {
             font-size: 14px;
             color: #555;
+        }
+    }
+}
+
+
+#second-section{
+    background-color: var(--accent-cream);
+}
+
+
+#third-section {
+    background-color: white;
+    padding-bottom: 90px;
+    .container{
+        background: white;
+        padding: 0;
+
+
+        .section-title{
+
+            color: var(--secondary-color);
+        }
+    }
+}
+
+#fourth-section{
+    background-color: var(--accent-cream);
+}
+
+
+#fifth-section {
+    background-color: white;
+    padding-bottom: 90px;
+    .container{
+        background: white;
+        padding: 0;
+
+
+        .section-title{
+
+            color: var(--secondary-color);
         }
     }
 }
