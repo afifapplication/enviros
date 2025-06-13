@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #28b760;     /* Muted green with a hint of grey */
-    --secondary-color: #166f3b;    /* Darker desaturated green #1e914c;*/
-    --tertiary-color: #a6d9bd;    /* Soft pastel green for accents */
+    --primary-color: #4d8068;      /* Muted jade green-grey */
+    --secondary-color: #2e4f3f;    /* Deep forest grey-green */
+    --tertiary-color: #c3d9cf;     /* Soft minty grey for accents */
     --text-light: #ffffff;
     --text-dark: #1a1a1a;
 
@@ -111,7 +111,7 @@ body {
     overflow: hidden;
 
     div div div .section-title {
-        background: linear-gradient(to right, white, white, var(--tertiary-color));
+        background: linear-gradient(to right, var(--secondary-color), var(--secondary-color), black);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text; /* For Firefox */
@@ -127,7 +127,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity here */
+    /* background-color: rgba(0, 0, 0, 0.7);Adjust the opacity here */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity here */
+
     z-index: -1;
 }
 
