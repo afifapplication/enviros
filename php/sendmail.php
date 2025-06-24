@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       echo "Captcha verification failed. Please go back and try again.";
       exit;
     }
-
+    //Analytis: https://www.google.com/recaptcha/admin/site/728474496
 
 
 
