@@ -8,6 +8,22 @@ require 'phpmailer/src/SMTP.php';
 require 'phpmailer/src/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $recaptchaSecret = '6LeAo2srAAAAABoRZYhoJmhtiw2iR4CNEMUJ9cEG';
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
+
+    $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
+    $responseData = json_decode($verify);
+
+    if (!$responseData->success) {
+      echo "Captcha verification failed. Please go back and try again.";
+      exit;
+    }
+
+
+
+
+
   $name = htmlspecialchars($_POST['name'] ?? '');
   $email = htmlspecialchars($_POST['email'] ?? '');
   $phone = htmlspecialchars($_POST['phone'] ?? '');
