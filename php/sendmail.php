@@ -16,15 +16,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $mail = new PHPMailer(true);
   try {
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'envirosh.webform@gmail.com';
-    $mail->Password = 'jpeu kvhq ezma vndx'; // Replace with generated App Password
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    //$mail->Host = 'smtp.gmail.com';
+    //$mail->SMTPAuth = true;
+    //$mail->Username = 'envirosh.webform@gmail.com';
+    //$mail->Password = 'jpeu kvhq ezma vndx'; // Replace with generated App Password
+    //$mail->SMTPSecure = 'tls';
+    //$mail->Port = 587;
 
-    $mail->setFrom('envirosh.webform@gmail.com', 'Envirosh Contact Form');
-    $mail->addAddress('envirosh.webform@gmail.com');
+    //$mail->setFrom('envirosh.webform@gmail.com', 'Envirosh Contact Form');
+    //$mail->addAddress('envirosh.webform@gmail.com');
+
+    $mail->Host = 'mail.enviroshcon.com'; // Or your hosting SMTP server
+    $mail->SMTPAuth = true;
+    $mail->Username = 'webform@enviroshcon.com';
+    $mail->Password = 'WebForm123!'; // Use the actual email password
+    $mail->SMTPSecure = 'tls'; // Or 'ssl' depending on your host
+    $mail->Port = 587; // Use 465 for SSL, 587 for TLS
+
+    $mail->setFrom('webform@enviroshcon.com', 'Envirosh Contact Form');
+    $mail->addAddress('webform@enviroshcon.com');
+
+
     $mail->addReplyTo($email, $name);
     $mail->Subject = "New Contact Form Submission from $name";
     $mail->isHTML(true);
