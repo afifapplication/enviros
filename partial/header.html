@@ -1,9 +1,15 @@
 <style>
     .navbar {
-        background: var(--secondary-color);
-        color: var(--text-light);
+        background: var(--light-background);
+        color: var(--text-dark);
         padding: 15px 20px;
         font-family: 'Roboto', sans-serif;
+
+        position: fixed; /* Make navbar stay at top */
+        top: 0;
+        left: 0;
+        width: 100%;  /* spans full width */
+        z-index: 999;
     }
     .navbar-container {
         display: flex;
@@ -26,7 +32,7 @@
         cursor: pointer;
         background: none;
         border: none;
-        color: var(--text-light);
+        color: var(--text-dark);
         flex: 0 0 auto;
         margin-left: auto;
     }
@@ -45,7 +51,7 @@
     }
 
     .navbar-menu li a {
-        color: var(--text-light);
+        color: var(--text-dark);
         text-decoration: none;
         position: relative;
         padding: 8px 0;
@@ -59,7 +65,7 @@
         height: 2px;
         left: 0;
         bottom: 0;
-        background: var(--text-light);
+        background: var(--text-dark);
         transition: width 0.3s;
     }
 
@@ -67,10 +73,10 @@
         width: 100%;
     }
     .navbar-menu li a.active {
-        background-color: var(--tertiary-color);
+        background-color: var(--medium-dark-background);
         border-radius: 4px;
         padding: 8px 12px;
-        color: var(--secondary-color);
+        color: var(--light-background);
     }
 
 
@@ -126,7 +132,10 @@
 
 <nav class="navbar"><div class="navbar-container">
     <div class="navbar-header">
-        <div class="navbar-title"><img src="assets/img/index/website-logo-only.png" alt="Logo" height="50px">&nbsp;&nbsp;ENVIROSH</div>
+        <div class="navbar-title"><img src="assets/img/index/website-logo-only.png" alt="Logo" height="50px">
+            <img src="assets/img/index/website-title-1.png" alt="Logo" height="40px">
+            <img src="assets/img/index/website-title-2.png" alt="Logo" height="30px">
+        </div>
         <button class="navbar-toggle" id="navbarToggle">&#9776;</button>
     </div>
     <ul class="navbar-menu" id="navbarMenu">

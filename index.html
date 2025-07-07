@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
 
     <link href="assets/css/style.css" rel="stylesheet">
@@ -18,16 +22,35 @@
 <div id="header"></div>
 <!-- Section 1: Headline with background and 2 columns -->
 <section id="headline-section">
+    <!--<video autoplay muted loop playsinline class="bg-video">
+        <source src="assets/img/index/petrolium-refinery-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>-->
     <div class="container">
         <div class="row align-items-center">
             <!--<div class="col-md-4">
                 <img src="assets/img/index/headline-section-bg.gif" alt="Visual" class="img-fluid">
             </div>-->
-            <div class="col-md-12" style="text-align: center;">
-                <img src="assets/img/index/website-logo.png" alt="Visual" class="img-fluid" width="300" style="margin-bottom: -50px;">
+            <div class="col-md-12 headline-container" style="text-align: center;">
+                <!--<img src="assets/img/index/website-logo.png" alt="Visual" class="img-fluid" width="300" style="margin-bottom: -50px;">-->
                 <div class="section-title">Protecting People, Planet & Productivity – Premium HSE Consulting & Training</div>
-                <p class="lead" style="color: var(--text-dark)">Comprehensive HSE expertise to ensure regulatory compliance, operational safety, and environmental responsibility.</p>
+                <p class="lead">Comprehensive HSE expertise to ensure regulatory compliance, operational safety, and environmental responsibility.</p>
             </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="stat-card">
+            <div class="number">30+</div>
+            <div class="label">Clients</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">16</div>
+            <div class="label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+            <div class="number" style="color: var(--text-dark)">24/7</div>
+            <div class="label" style="color: var(--text-dark)">Support</div>
         </div>
     </div>
 </section>
@@ -39,7 +62,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="column-content card">
-                <img src="assets/img/index/inspection.png" alt="Feature 1">
+                <img src="assets/img/gallery/perodua-comp.png" alt="Feature 1">
                 <p class="title">HSE Risk Assessment & Monitoring</p>
                 <p>Comprehensive evaluations to identify and control workplace hazards</p>
                 <p>• CHRA (Chemical Health Risk Assessment)<br>
@@ -47,25 +70,31 @@
                     • Chemical Exposure Monitoring<br>
                     • Noise Risk Assessment<br>
                     • Stack Monitoring<br>
-                    • Initial & Advanced ERA (Environmental Risk Assessment)
+                    • Initial & Advanced ERA<br>
+                    • CIMAH consultation services - preparation of CIMAH Report by a Major Hazard DOSH-registered Competent Person<br>
+                    • Hazard Identification, Risk Assessment & Control (HIRARC)<br>
+                    • Health Risk Assessment (HRA)<br>
+                    • provide AGTES services<br>
+                    • provide lifting supervision<br>
+                    • provide scaffolding inspection / erection (Level 1, 2, & 3)
                 </p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="column-content card">
-                <img src="assets/img/index/compliance.png" alt="HSE Compliance Services">
+                <img src="assets/img/gallery/lab-comp.png" alt="HSE Compliance Services">
                 <p class="title">HSE Compliance & Certification</p>
                 <p>Expert guidance to meet regulatory and international standards</p>
-                <p>• Scheduled Waste Management<br>
+                <p>• OSHA 1994 and its 2022 Amendment compliant & consultancy<br>
+                    • Scheduled Waste Management<br>
                     • SEDEX SMETA Audits<br>
-                    • ISO 45001 Consultation<br>
-                    • OSHA/FMA Compliance Training<br>
-                    • Fire Safety & Emergency Response Planning</p>
+                    • ISO 9001, ISO 14001, ISO 45001 Training & Consultation<br>
+                    • Emergency Response Preparedness</p>
             </div>
             </div>
             <div class="col-md-4">
                 <div class="column-content card">
-                <img src="assets/img/index/educate.png" alt="HSE Training Programs">
+                <img src="assets/img/gallery/insurance-comp.png" alt="HSE Training Programs">
                 <p class="title">HSE Training & Workforce Development</p>
                 <p>Empowering teams with knowledge for a safer workplace</p>
                 <p>• Chemical Safety & Management<br>
@@ -77,20 +106,17 @@
             </div>
         </div>
         <br/>
-        <a href="service.html" class="btn-more">More Services</a>
+        <a href="service.html" class="btn-more light">More Services</a>
     </div>
 </section>
 
 
-<section id="third-section">
+<!--<section id="third-section">
     <div class="container text-center">
         <div class="section-title">About Us</div>
         <div class="row" style="padding: 0 50px;">
-            <!--<div class="col-md-3">
-                <img src="assets/img/index/about-us.png" alt="Decathlon"/>
-            </div>-->
             <div class="col-md-12" style="text-align: justify; font-size: var(--text-small); color: var(--text-light);">
-                <p>Envirosh Engineering & Consultancy is a Malaysian-based company established on 27th December 2018 under the Company Act 1965. Operating as a sole proprietorship, we specialize in providing integrated Environmental, Safety & Health (ESH) solutions tailored to meet the unique needs of businesses across various industries.
+                <p>Envirosh Engineering & Consultancy is a Malaysian-based company established in 2018 under the Company Act 1965. Operating as a sole proprietorship, we specialize in providing integrated Environmental, Safety & Health (ESH) solutions tailored to meet the unique needs of businesses across various industries.
                     <br/><br/>
                     As a trusted name in inspection, certification, testing, and verification services, we help organizations navigate and comply with local, national, and international ESH regulations. Our mission is to empower businesses to adopt best practices that safeguard their workforce, the environment, and their operational integrity.
                     <br/><br/>
@@ -101,7 +127,6 @@
                         <p><b>We ensure your operations comply fully with key ESH Acts:</b></p>
                         <ul>
                             <li>Occupational Safety and Health Act 1994 and Regulations (OSHA)</li>
-                            <li>Factory and Machinery Act 1967 and Regulations (FMA)</li>
                             <li>Petroleum (Safety Measures) Act 1984 (PSMA)</li>
                             <li>Environmental Quality Act 1974 (EQA)</li>
                         </ul>
@@ -121,85 +146,62 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
+<section id="third-section">
+    <div class="container text-center">
+        <div class="section-title">Our Clients</div>
+    </div>
+</section>
 
 <section id="fourth-section">
     <div class="container text-center">
-        <div class="section-title">Our Clients</div>
-
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image6.png" alt="Client 6" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image7.png" alt="Client 7" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image8.jpeg" alt="Client 8" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image9.jpeg" alt="Client 9" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/perodua-logo.png" alt="Client 10" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/client-decathlon.jpg" alt="Client 11" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image13.png" alt="Client 13" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image14.png" alt="Client 14" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image15.png" alt="Client 15" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image16.jpeg" alt="Client 16" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image18.png" alt="Client 18" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image19.jpeg" alt="Client 19" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image20.png" alt="Client 20" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image46.jpeg" alt="Client 21" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image22.png" alt="Client 22" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image23.png" alt="Client 23" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image24.png" alt="Client 24" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image25.png" alt="Client 25" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image26.jpeg" alt="Client 26" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image27.jpeg" alt="Client 27" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image29.png" alt="Client 29" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image30.png" alt="Client 30" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image31.png" alt="Client 31" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image32.jpeg" alt="Client 32" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image33.png" alt="Client 33" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image34.png" alt="Client 34" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image35.jpeg" alt="Client 35" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image36.jpeg" alt="Client 36" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image37.png" alt="Client 37" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image38.png" alt="Client 38" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image39.png" alt="Client 39" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image40.jpeg" alt="Client 40" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image41.png" alt="Client 41" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="assets/img/index/clients/image42.jpeg" alt="Client 42" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image43.png" alt="Client 43" width="200"/></div>
-            <div class="col-md-4"><img src="assets/img/index/clients/image44.png" alt="Client 44" width="200"/></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h4 style="font-weight: bold; var(--secondary-color); margin-top: 50px;">...and many more!</h4>
+        <div class="swiper clientsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/index/clients/image6.png" alt="Client 6" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image7.png" alt="Client 7" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image8.jpeg" alt="Client 8" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image9.jpeg" alt="Client 9" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/perodua-logo.png" alt="Client 10" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/client-decathlon.jpg" alt="Client 11" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image13.png" alt="Client 13" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image14.png" alt="Client 14" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image15.png" alt="Client 15" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image16.jpeg" alt="Client 16" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image18.png" alt="Client 18" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image19.jpeg" alt="Client 19" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image20.png" alt="Client 20" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image46.jpeg" alt="Client 21" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image22.png" alt="Client 22" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image23.png" alt="Client 23" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image24.png" alt="Client 24" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image25.png" alt="Client 25" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image26.jpeg" alt="Client 26" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image27.jpeg" alt="Client 27" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image29.png" alt="Client 29" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image30.png" alt="Client 30" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image31.png" alt="Client 31" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image32.jpeg" alt="Client 32" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image33.png" alt="Client 33" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image34.png" alt="Client 34" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image35.jpeg" alt="Client 35" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image36.jpeg" alt="Client 36" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image37.png" alt="Client 37" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image38.png" alt="Client 38" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image39.png" alt="Client 39" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image40.jpeg" alt="Client 40" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image41.png" alt="Client 41" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image42.jpeg" alt="Client 42" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image43.png" alt="Client 43" /></div>
+                <div class="swiper-slide"><img src="assets/img/index/clients/image44.png" alt="Client 44" /></div>
             </div>
         </div>
-
     </div>
-
 </section>
 
 
-<section id="fifth-section">
+
+<!--<section id="fifth-section">
     <div class="container text-center">
         <div class="section-title">Gallery</div>
         <div class="row" style="padding: 0 50px;">
@@ -237,11 +239,37 @@
 
         </div>
     </div>
-</section>
+</section>-->
 
 <div id="footer"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script src="assets/js/main.js"></script>
+
+<script>
+    const swiper = new Swiper(".clientsSwiper", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+    },
+    speed: 4000, // faster speed for seamless scroll
+    grabCursor: true,
+    allowTouchMove: false,
+    breakpoints: {
+        0: { slidesPerView: 2 },
+        576: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        992: { slidesPerView: 5 },
+        1200: { slidesPerView: 6 }
+    }
+});
+
+</script>
+
 </body>
 </html>
