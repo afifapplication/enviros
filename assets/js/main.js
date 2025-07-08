@@ -35,17 +35,17 @@ fetch('partial/header.html')
             ) {
                 link.classList.add('active');
             } else if (
-                (currentPath === '/' || currentPath.endsWith('service.html')) &&
+                (currentPath.endsWith('service.html')) &&
                 href === 'service.html'
             ) {
                 link.classList.add('active');
             } else if (
-                (currentPath === '/' || currentPath.endsWith('about.html')) &&
+                (currentPath.endsWith('about.html')) &&
                 href === 'about.html'
             ) {
                 link.classList.add('active');
             } else if (
-                (currentPath === '/' || currentPath.endsWith('contact.html')) &&
+                (currentPath.endsWith('contact.html')) &&
                 href === 'contact.html'
             ) {
                 link.classList.add('active');
@@ -59,4 +59,23 @@ fetch('partial/header.html')
 
 window.addEventListener('load', function () {
     window.scrollTo(0, 0);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                // Optionally unobserve if you want it only once
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    cards.forEach(card => observer.observe(card));
 });

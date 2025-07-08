@@ -22,15 +22,17 @@
 <div id="header"></div>
 <!-- Section 1: Headline with background and 2 columns -->
 <section id="headline-section">
-    <!--<video autoplay muted loop playsinline class="bg-video">
-        <source src="assets/img/index/petrolium-refinery-bg.mp4" type="video/mp4" />
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="assets/img/index/header-bg-vid-1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-    </video>-->
+    </video>
+    <div class="dark-overlay"></div>
+    <!--<div class="col-md-12">
+        <img src="assets/img/index/headline-bg-1.png" alt="Visual" class="drone-zoom-image">
+        <div class="dark-overlay"></div>
+    </div>-->
     <div class="container">
         <div class="row align-items-center">
-            <!--<div class="col-md-4">
-                <img src="assets/img/index/headline-section-bg.gif" alt="Visual" class="img-fluid">
-            </div>-->
             <div class="col-md-12 headline-container" style="text-align: center;">
                 <!--<img src="assets/img/index/website-logo.png" alt="Visual" class="img-fluid" width="300" style="margin-bottom: -50px;">-->
                 <div class="section-title">Protecting People, Planet & Productivity – Premium HSE Consulting & Training</div>
@@ -49,8 +51,8 @@
             <div class="label">Years Experience</div>
         </div>
         <div class="stat-card">
-            <div class="number" style="color: var(--text-dark)">24/7</div>
-            <div class="label" style="color: var(--text-dark)">Support</div>
+            <div class="number">24/7</div>
+            <div class="label">Support</div>
         </div>
     </div>
 </section>
@@ -111,42 +113,6 @@
 </section>
 
 
-<!--<section id="third-section">
-    <div class="container text-center">
-        <div class="section-title">About Us</div>
-        <div class="row" style="padding: 0 50px;">
-            <div class="col-md-12" style="text-align: justify; font-size: var(--text-small); color: var(--text-light);">
-                <p>Envirosh Engineering & Consultancy is a Malaysian-based company established in 2018 under the Company Act 1965. Operating as a sole proprietorship, we specialize in providing integrated Environmental, Safety & Health (ESH) solutions tailored to meet the unique needs of businesses across various industries.
-                    <br/><br/>
-                    As a trusted name in inspection, certification, testing, and verification services, we help organizations navigate and comply with local, national, and international ESH regulations. Our mission is to empower businesses to adopt best practices that safeguard their workforce, the environment, and their operational integrity.
-                    <br/><br/>
-                    With a multidisciplinary team combining expertise in Engineering, Occupational Safety & Health (OSH), General Management, and Medical OSH, we offer practical, effective solutions. Whether you're looking to enhance compliance, manage risks, or create a safer workplace, Envirosh delivers strategies rooted in industry-leading knowledge and real-world experience.</p>
-                <br/>
-                <div class="row" style="font-size: var(--text-small-xs);">
-                    <div class="col-md-6">
-                        <p><b>We ensure your operations comply fully with key ESH Acts:</b></p>
-                        <ul>
-                            <li>Occupational Safety and Health Act 1994 and Regulations (OSHA)</li>
-                            <li>Petroleum (Safety Measures) Act 1984 (PSMA)</li>
-                            <li>Environmental Quality Act 1974 (EQA)</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <p><b>For the environment: Our specialists guide all environmental responsibilities, offering solutions:</b></p>
-                        <ul>
-                            <li>Air: Ambient and indoor air sampling and testing services</li>
-                            <li>Soil: Drilling, sampling, testing, and geotechnical support provided</li>
-                            <li>Water: Comprehensive sampling and analysis of all water types</li>
-                            <li>Waste: Waste assessment, testing, monitoring, and reduction strategies available</li>
-                            <li>Noise: Accurate noise level measurement and environmental compliance support</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>-->
 
 <section id="third-section">
     <div class="container text-center">
@@ -199,7 +165,70 @@
     </div>
 </section>
 
+<section id="contact-section">
+    <div class="container text-center">
+        <div class="section-title mb-5">Feel Free to Reach Us</div>
 
+        <div class="row align-items-start gy-4">
+
+            <!-- Left Column: Logo & Text -->
+            <div class="col-md-6 text-start">
+                <!-- Logo centered -->
+                <div class="mb-4 text-center">
+                    <img src="assets/img/index/website-logo.png" alt="Visual" class="img-fluid" width="250">
+                </div>
+                <!-- Intro Text -->
+                <h4 class="mb-3" style="font-size: var(--text-large);margin-top: -50px;color: var(--text-light)">We’re here to help you create a safer, healthier, and fully compliant workplace.</h4>
+                <p class="" style="font-size: var(--text-small)">
+                    Whether you need expert consultation, on-site assessments, or tailored training programs, our team is ready to support your goals.
+                </p>
+                <p class="" style="font-size: var(--text-small)">
+                    Every organization is unique—and we’re committed to providing responsive, customized solutions that align with your industry requirements and safety priorities.
+                </p>
+                <p class="" style="font-size: var(--text-small)">
+                    Reach out to us with your inquiries, service needs, or to schedule a consultation. Our specialists are available to guide you through the next steps and ensure you get the clarity and confidence you need to move forward. Let’s work together to build a culture of safety and compliance you can count on.
+                </p>
+            </div>
+
+            <!-- Right Column: Contact Form inside a Card -->
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0" style="height: 55rem;">
+                    <div class="card-body">
+                        <form style="font-size: var(--text-small)" method="POST" action="php/sendmail.php">
+                            <div class="mb-3 text-start">
+                                <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <div class="g-recaptcha" data-sitekey="6LeAo2srAAAAAIS9Ob5POe7IJFd3usyx_by3gfeV"></div>
+                            </div>
+
+                            <div class="text-start">
+                                <button type="submit" class="btn btn-primary" style="background-color: var(--accent-orange); border-color: var(--accent-orange);">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <!--<section id="fifth-section">
     <div class="container text-center">

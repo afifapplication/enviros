@@ -1,3 +1,48 @@
+
+
+@keyframes fadeLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#headline-section .section-title {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: fadeLeft 1s ease-out forwards;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+#headline-section .lead {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: fadeLeft 1s ease-out forwards;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+#headline-section .stat-card {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: fadeLeft 1s ease-out forwards;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+#headline-section .btn-more {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: fadeLeft 1s ease-out forwards;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
 #headline-section {
     position: relative;
     background-image: url('../../assets/img/index/headline2-section-bg.png');
@@ -15,6 +60,10 @@
         color: transparent;
         margin-bottom: 30px;
     }
+
+    div div div .lead {
+        color: var(--text-light);
+    }
 }
 
 #headline-section::before {
@@ -24,7 +73,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Adjust the opacity here */
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
     z-index: -1;
 }
 
@@ -80,8 +129,13 @@
 }
 
 
-#second-section{
-    background-color: var(--accent-cream);
+#second-section
+.container{
+
+
+    .section-title{
+        color: var(--text-light);
+    }
 }
 
 
@@ -95,13 +149,27 @@
 
         .section-title{
 
-            color: var(--secondary-color);
+            color: var(--text-dark);
         }
     }
 }
 
 #fourth-section{
-    background-color: var(--accent-cream);
+
+    padding: 90px 0;
+    background: linear-gradient(
+            to bottom,
+            var(--medium-dark-background),
+            var(--medium-light-background),
+            var(--medium-dark-background)
+    );
+    .container{
+        background: transparent;
+
+        .section-title{
+            color: var(--text-light);
+        }
+    }
 }
 
 
@@ -115,7 +183,7 @@
 
         .section-title{
 
-            color: var(--secondary-color);
+            color: var(--text-dark);
         }
     }
 }

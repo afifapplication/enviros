@@ -1,3 +1,4 @@
+
 #second-section {
     color: var(--text-light);
     padding: 60px 0 90px 0;
@@ -5,7 +6,7 @@
     .container{
     padding: 0 10px;
         .section-title{
-            color: var(--secondary-color);
+            color: var(--text-light);
         }
 
         div div form div label{
