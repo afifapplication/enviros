@@ -167,6 +167,10 @@ body {
         }
     }
 
+    .container{
+        padding: 0;
+    }
+
 
     /*.drone-zoom-image {
         position: absolute;
@@ -324,46 +328,61 @@ body {
         .section-title {
         }
 
-        .row {
-            .column-content.card {
-                background: rgba(0, 0, 0, 0.35);
-                backdrop-filter: blur(12px) saturate(180%);
-                -webkit-backdrop-filter: blur(12px) saturate(180%);
-                background: white;
-                border-radius: 16px;
-                padding: 20px;
-                margin-bottom: 30px;
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 
-                img {
-                    height: auto;
-                    margin: -20px -20px 15px -20px;
-                    border-radius: 16px 16px 0 0;
-                }
-
-                .title {
-                    font-weight: 700;
-                    font-size: 1.25rem;
-                    color: var(--text-dark);
-                    text-align: center;
-                    margin-bottom: 12px;
-                }
-
-                p {
-                    color: var(--text-dark);
-                    text-align: left;
-                    line-height: 1.5;
-                    margin-bottom: 12px;
-                }
-
-            // Optional hover lift
-            &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-            }
+        .swiper {
+            padding: 40px 0;
         }
+
+        .swiper-slide {
+            width: 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .column-content.card {
+            height: 800px;
+            background: white;
+            border-radius: 16px;
+            margin: 0 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 0;               /* This disables internal padding */
+        }
+
+        .column-content.card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .column-content.card img {
+            height: auto;
+            width: 100%;
+            border-radius: 16px 16px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .column-content.card .title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            text-align: center;
+            margin: 0 20px;
+            margin-bottom: 12px;
+        }
+
+        .column-content.card p {
+            color: var(--text-dark);
+            line-height: 1.5;
+            margin: 0 20px;
+            margin-bottom: 12px;
+        }
+
+        /* Active bullet */
+        .swiper-pagination-bullet-active {
+            background-color: var(--light-background); /* or use #fff for white */
+        }
+
 
         .btn-more {
             margin-top: 20px;
