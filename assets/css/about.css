@@ -30,7 +30,7 @@
     z-index: 1;
     overflow: hidden;
 
-    div div div .section-title {
+    .section-title {
         background: linear-gradient(to right, white, white, var(--tertiary-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -73,6 +73,7 @@
     );
     .container{
         padding: 0;
+        max-width: 90vw;
         div div img{
             max-width: 100%;
         }
@@ -86,7 +87,7 @@
 
 
 
-#second-section {
+#bottom-section {
     padding: 0;
     background: transparent;
     .container{
