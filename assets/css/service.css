@@ -158,10 +158,9 @@
 
     padding: 90px 0;
     background: linear-gradient(
-            to bottom,
+            to right,
             var(--medium-dark-background),
-            var(--medium-light-background),
-            var(--medium-dark-background)
+            var(--medium-light-background)
     );
     .container{
         background: transparent;
@@ -209,10 +208,9 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(
-            to bottom,
+            to right,
             var(--medium-dark-background),
-            var(--medium-light-background),
-            var(--medium-dark-background)
+            var(--medium-light-background)
     );
     padding-top: 0;
 

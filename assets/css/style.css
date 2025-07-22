@@ -1,16 +1,20 @@
 :root {
-    --primary-color-dark: #0b5da1;      /* Muted jade green-grey */
-    --primary-color: #138aed;      /* Muted jade green-grey */
-    --secondary-color: #3c88c7;    /* Deep forest grey-green */
-    --tertiary-color: #8fb8db;     /* Soft minty grey for accents */
-    --text-light: #ffffff;
-    --text-dark: #545454;
-    --text-medium-light: #aaaaaa;
+    /* Core Blues & Accent */
+    --primary-color-dark:       #0D1B2A;  /* Rich Navy */
+    --primary-color:            #1B263B;  /* Deep Blue-Gray */
+    --secondary-color:          #415A77;  /* Muted Slate Blue */
+    --tertiary-color:           #ffbaf4;  /* Soft “Digital Lavender” Accent */
 
-    --light-background: #fdf8f2;
-    --medium-light-background: #99b0c4;
-    --medium-dark-background: #6c89a1;
-    --dark-background: #545454;
+    /* Text */
+    --text-light:               #FFFFFF;
+    --text-dark:                #212529;  /* Charcoal Black */
+    --text-medium-light:        #6C757D;  /* Medium Gray */
+
+    /* Backgrounds */
+    --light-background:         #F8F9FA;  /* Off-White */
+    --medium-light-background:  #415A77;  /* Light Gray */
+    --medium-dark-background:   #1B263B;  /* Dark Gray */
+    --dark-background:          #0D1B2A;  /* Charcoal */
 
     --accent-orange: #e86e1c; /*button*/
     --accent-blue: #6c7a89; /*section dark background*/
@@ -153,7 +157,7 @@ body {
 */
 
 #headline-section {
-    padding: 120px 0;
+    padding: 60px 0;
     position: relative;
     /*background-image: url('../../assets/img/index/headline-bg-1.png');*/
     background-size: cover;
@@ -198,7 +202,7 @@ body {
     }
 
     div div div .section-title {
-        background: linear-gradient(to right, white, var(--text-light));
+        background: linear-gradient(to right, white, white, var(--tertiary-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text; /* For Firefox */
@@ -241,7 +245,7 @@ body {
 
         .stat-card {
             text-align: center;
-            background: rgba(255, 255, 255, 0.55); /* translucent white */
+            background: rgba(255, 255, 255, 0.8); /* translucent white */
             backdrop-filter: blur(12px) saturate(160%);
             -webkit-backdrop-filter: blur(12px) saturate(160%);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -321,10 +325,9 @@ body {
 #second-section {
     padding: 0;
     background: linear-gradient(
-            to bottom,
+            to right,
             var(--medium-dark-background),
-            var(--medium-light-background),
-            var(--medium-dark-background)
+            var(--medium-light-background)
     );
 
     .container {
@@ -460,7 +463,11 @@ body {
 #contact-section {
     color: var(--text-light);
     padding: 60px 0 90px 0;
-    background-color: var(--medium-dark-background);
+    background: linear-gradient(
+            to right,
+            var(--medium-dark-background),
+            var(--medium-light-background)
+    );
     .container{
         padding: 0 10px;
         .section-title{

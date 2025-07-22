@@ -66,10 +66,9 @@
 
 #aboutus-section {
     background: linear-gradient(
-            to bottom,
+            to right,
             var(--medium-dark-background),
-            var(--medium-light-background),
-            var(--medium-dark-background)
+            var(--medium-light-background)
     );
     .container{
         padding: 0;

@@ -129,6 +129,31 @@
              width: 100%;
          }
     }
+
+
+    @media only screen
+    and (max-width: 768px)
+    and (orientation: portrait) {
+
+        /* 1) hide the last 3 <img> in .navbar-title via nth-of-type */
+        .navbar-title img:nth-of-type(n+3) {
+            display: none !important;
+        }
+
+        /* 2) override your “active” styles so there’s no background on mobile-portrait */
+        .navbar-menu li a.active {
+            background-color: transparent !important;
+            color: var(--text-dark) !important;
+            padding: 8px 0 !important;           /* reset that big padding */
+            border-radius: 0 !important;         /* undo any rounding */
+        }
+        /* and if you want to kill the underline pseudo too: */
+        .navbar-menu li a.active::after {
+            width: 0 !important;
+            background: none !important;
+        }
+    }
+
 </style>
 
 <nav class="navbar"><div class="navbar-container">
@@ -136,9 +161,10 @@
         <div class="navbar-title"><img src="assets/img/index/website-logo-only.png" alt="Logo" height="40px">
             <img src="assets/img/index/website-title-1.png" alt="Logo" height="25px">
             <!--<img src="assets/img/index/website-title-2.png" alt="Logo" height="30px">-->
-            ( <img src="assets/img/index/hdr1.jpeg" alt="Logo" height="40px">
+            &nbsp;&nbsp;
+             <img src="assets/img/index/hdr1.jpeg" alt="Logo" height="40px">
             <img src="assets/img/index/hdr2.jpeg" alt="Logo" height="40px">
-            <img src="assets/img/index/hdr3.jpeg" alt="Logo" height="40px"> )
+            <img src="assets/img/index/hdr3.jpeg" alt="Logo" height="40px">
         </div>
         <button class="navbar-toggle" id="navbarToggle">&#9776;</button>
     </div>
