@@ -156,6 +156,21 @@ body {
     }
 */
 
+@keyframes fadeZoomInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 #headline-section {
     padding: 60px 0;
     position: relative;
@@ -201,13 +216,15 @@ body {
         z-index: -1;
     }
 
+    div div div #hdrcorp-logos{
+        margin-top:20px;
+    }
     div div div .section-title {
         background: linear-gradient(to right, white, white, var(--tertiary-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text; /* For Firefox */
         color: transparent;
-        margin-top:50px;
         margin-bottom: 30px;
         font-size: var(--text-large-xxl);
         font-weight: 800;
@@ -236,7 +253,7 @@ body {
 
 
     .card-container {
-        margin-top: 30px;
+        margin-top: -20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -252,12 +269,26 @@ body {
             outline: 1px solid rgba(255, 255, 255, 0.3);
             outline-offset: -1px;
 
-            padding: 40px 30px;
+            padding: 40px 0;
             border-radius: 16px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* subtle but deep shadow */
             min-width: 180px;
             max-width: 220px;
             transition: transform 0.2s ease;
+        }
+
+        .stat-card.certified-float {
+            margin-top: -20px;
+            background-color: transparent;
+            background: transparent;
+            box-shadow: none; /* subtle but deep shadow */
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            border: 0;
+            outline: 0;
+
+            opacity: 0; /* Start fully hidden */
+            animation: fadeZoomInOut 0.8s ease-out 2s forwards; /* 1s delay before animation */
         }
 
 
@@ -287,6 +318,14 @@ body {
     }
 }
 
+
+#headline-section #hdrcorp-logos {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
 
 #headline-section .section-title {
     opacity: 0;
